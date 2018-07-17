@@ -614,6 +614,11 @@ export interface ReactCreatableSelectProps<TValue = OptionValues> extends ReactS
      * new option click handler: function (option) {}
      */
     onNewOptionClick?: OnNewOptionClickHandler<TValue>;
+
+    /**
+     * Decides where to show the new option, either top (true, default) or bottom (false).
+     */
+    showNewOptionAtTop?: boolean;
 }
 
 export interface ReactAsyncSelectProps<TValue = OptionValues> extends ReactSelectProps<TValue> {
